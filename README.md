@@ -8,7 +8,7 @@
 > <sup>3</sup>Texas A&M University
 
 [![arXiv](https://img.shields.io/badge/arXiv-DINOR1-critical)](https://arxiv.org/abs/xxxx.xxxxx)
-[![Project Page](https://img.shields.io/badge/Project_Page-DINOR1-brightgreen)](https://your-project-page-link.com)
+[![Project Page](https://img.shields.io/badge/Project_Page-DINOR1-brightgreen)](https://Christinepan881.github.io/DINO-R1)
 
 
 ## 📄 Abstract
