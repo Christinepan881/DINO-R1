@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>DINO-R1: Incentivizing Reasoning Capability in Vision Foundation Models</title> <!--DINO-R1-->
+  <link rel="icon" type="image/x-icon" href="static/images/dino-r1-icon.jpg"> <!--DINO-R1-->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><em>DINO-R1</em>: Incentivizing Reasoning Capability in Vision Foundation Models</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=Ln6sN1IAAAAJ&hl=en" target="_blank">Chenbin Pan</a><sup>1,2</sup>,</span>
+                <span class="author-block">
+                  <a href="https://hewenbin.github.io/" target="_blank">Wenbin He</a><sup>1,2</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://vztu.github.io/" target="_blank">Zhengzhong Tu</a><sup>3</sup>,</span>
+                    <span class="author-block">
+                      <a href="https://www.liu-ren.com/" target="_blank">Liu Ren</a><sup>1,2</sup>
+                  </span>
+                  </div>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Bosch Research North America<br><sup>2</sup>Bosch Center for Artificial Intelligence (BCAI)<br><sup>3</sup>Texas A&M University</span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <figure class="image is-16by8">
+        <!-- Your image here -->
+        <img src="static/images/demo-1.jpg" alt="Demo Image">
+      </figure>
+      <h2 class="subtitle has-text-centered">
+        <strong>Figure.1</strong>  Visualization of query distributions across decoder layers under visual prompts. We highlight queries associated with negative prompts in red and those aligned with positive prompts in other colors. GRQO shows progressively focused and semantically aligned query behavior, while SFT suffers from more scattered and ambiguous query activation.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser image -->
+ 
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The recent explosive interest in the reasoning capabilities of large language models, such as DeepSeek-R1, has demonstrated remarkable success through reinforcement learning-based fine-tuning frameworks, exemplified by methods like Group Relative Policy Optimization (GRPO). However, such reasoning abilities remain underexplored and notably absent in vision foundation models, including representation models like the DINO series. In this work, we propose <strong><em>DINO-R1</em></strong>, the first such attempt to incentivize visual in-context reasoning capabilities of vision foundation models using reinforcement learning. Specifically, <strong><em>DINO-R1</em></strong> introduces Group Relative Query Optimization (GRQO), a novel reinforcement-style training strategy explicitly designed for query-based representation models, which computes query-level rewards based on group-normalized alignment quality. We also apply KL-regularization to stabilize the objectness distribution to reduce the training instability. This joint optimization enables dense and expressive supervision across queries while mitigating overfitting and distributional drift. Building upon Grounding-DINO, we train a series of <strong><em>DINO-R1</em></strong> family models that integrate a visual prompt encoder and a visual-guided query selection mechanism. Extensive experiments on COCO, LVIS, and ODinW demonstrate that <strong><em>DINO-R1</em></strong> significantly outperforms supervised fine-tuning baselines, achieving strong generalization in both open-vocabulary and closed-set visual prompting scenarios.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Intro image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Introduction</h2>
+      <figure class="image is-16by8">
+        <!-- Your image here -->
+        <img src="static/images/fig-sft-grqo-cmp.jpg" alt="Demo Image">
+      </figure>
+      <h2 class="subtitle has-text-centered">
+        <strong>Figure.2</strong>  SFT vs. GRQO. SFT leads to limited and homogeneous supervision signals, while GRQO produces richer and more diverse learning signals, encouraging queries to be more expressive.
+      </h2>
+      <h2 class="subtitle has-text-justified">
+        Inspired by the recent breakthroughs in RL-based training frameworks for large reasoning models (LRMs), which efficaciously exploit large-scale noisy training data, we aim to similarly unlock the potential of reasoning capabilities within pure vision models, e.g., VFMs. Yet, na\"ive application of language-based RL methods such as GRPO to vision presents non-trivial challenges. For one thing, GRPO assumes the model behaves as a probabilistic generator, explicitly sampling diverse outputs from learned distributions per input. In contrast, vision models typically produce deterministic structured predictions, making it nontrivial to optimize over a sampled output space. For another, GRPO's KL-regularization that stabilizes training via constraining token-level output distributions in language models can not be easily translated to structured visual predictions due to fundamental differences in language and vision formulation. To this end, we present a novel vision-centric RL learning method called group related query optimization (GRQO) designed to incentivize reasoning capabilities in VFMs, notably DINO families.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End Intro image -->
+
+<!-- Method image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Method</h2>
+      <figure class="image is-16by8">
+        <img src="static/images/grqo-overview.jpg" alt="Demo Image">
+      </figure>
+      <h2 class="subtitle has-text-centered">
+        <strong>Figure.3</strong>  SFT vs. GRQO. SFT leads to limited and homogeneous supervision signals, while GRQO produces richer and more diverse learning signals, encouraging queries to be more expressive.
+      </h2>
+      <figure class="image is-16by8">
+        <img src="static/images/grqo-algo.jpg" alt="Demo Image">
+      </figure>
+    </div>
+  </div>
+</section>
+<!-- End Method image -->
+
+<!-- Experiments image-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Experiments</h2>
+      <figure class="image is-16by8">
+        <img src="static/images/exp-table.jpg" alt="Demo Image">
+      </figure>
+      <figure class="image is-16by8">
+        <img src="static/images/fig-query-vis-4.jpg" alt="Demo Image">
+      </figure>
+      <figure class="image is-16by8">
+        <img src="static/images/fig-query-vis-3.jpg" alt="Demo Image">
+      </figure>
+      <figure class="image is-16by8">
+        <img src="static/images/fig-bbox-vis-2.jpg" alt="Demo Image">
+      </figure>
+      <figure class="image is-16by8">
+        <img src="static/images/fig-bbox-vis-3.jpg" alt="Demo Image">
+      </figure>
+    </div>
+  </div>
+</section>
+<!-- End Experiments image -->
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{pan2025dino-r1,
+        title={DINO-R1: Incentivizing Reasoning Capability in Vision Foundation Models},
+        author={Pan, Chenbin and He, Wenbin and Tu, Zhengzhong and Ren, Liu},
+        journal={arXiv preprint arXiv:xx.xx},
+        year={2025}
+      }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
