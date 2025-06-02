@@ -14,6 +14,7 @@
 ## 📄 Abstract
 > The recent explosive interest in the reasoning capabilities of large language models, such as DeepSeek-R1, has demonstrated remarkable success through reinforcement learning-based fine-tuning frameworks, exemplified by methods like Group Relative Policy Optimization (GRPO). However, such reasoning abilities remain underexplored and notably absent in vision foundation models, including representation models like the DINO series. In this work, we propose <strong><em>DINO-R1</em></strong>, the first such attempt to incentivize visual in-context reasoning capabilities of vision foundation models using reinforcement learning. Specifically, <strong><em>DINO-R1</em></strong> introduces Group Relative Query Optimization (GRQO), a novel reinforcement-style training strategy explicitly designed for query-based representation models, which computes query-level rewards based on group-normalized alignment quality. We also apply KL-regularization to stabilize the objectness distribution to reduce the training instability. This joint optimization enables dense and expressive supervision across queries while mitigating overfitting and distributional drift. Building upon Grounding-DINO, we train a series of <strong><em>DINO-R1</em></strong> family models that integrate a visual prompt encoder and a visual-guided query selection mechanism. Extensive experiments on COCO, LVIS, and ODinW demonstrate that <strong><em>DINO-R1</em></strong> significantly outperforms supervised fine-tuning baselines, achieving strong generalization in both open-vocabulary and closed-set visual prompting scenarios.
 
+![GRQO](static/images/grqo-overview.jpg)
 
 ## 📌 Citation
 ```bibtex
@@ -23,4 +24,3 @@
         journal={arXiv preprint arXiv:2505.24025},
         year={2025}
       }
-      
