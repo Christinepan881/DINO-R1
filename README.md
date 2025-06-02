@@ -7,7 +7,7 @@
 > <sup>2</sup>Bosch Center for Artificial Intelligence (BCAI)
 > <sup>3</sup>Texas A&M University
 
-[![arXiv](https://img.shields.io/badge/arXiv-DINOR1-critical)](https://arxiv.org/abs/xxxx.xxxxx)
+[![arXiv](https://img.shields.io/badge/arXiv-DINOR1-critical)](https://arxiv.org/pdf/2505.24025)
 [![Project Page](https://img.shields.io/badge/Project_Page-DINOR1-brightgreen)](https://Christinepan881.github.io/DINO-R1)
 
 
@@ -17,11 +17,11 @@
 
 ## 📌 Citation
 ```bibtex
-@article{pan2025dino-r1,
-  title={DINO-R1: Incentivizing Reasoning Capability in Vision Foundation Models},
-  author={Pan, Chenbin and He, Wenbin and Tu, Zhengzhong and Ren, Liu},
-  journal={arXiv preprint arXiv:xx.xx},
-  year={2025}
-}
+@article{pan2025dino,
+        title={DINO-R1: Incentivizing Reasoning Capability in Vision Foundation Models},
+        author={Pan, Chenbin and He, Wenbin and Tu, Zhengzhong and Ren, Liu},
+        journal={arXiv preprint arXiv:2505.24025},
+        year={2025}
+      }
 
 
