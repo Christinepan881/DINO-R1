@@ -19,8 +19,8 @@
 ## 📌 Citation
 ```bibtex
 @article{pan2025dino,
-        title={DINO-R1: Incentivizing Reasoning Capability in Vision Foundation Models},
-        author={Pan, Chenbin and He, Wenbin and Tu, Zhengzhong and Ren, Liu},
-        journal={arXiv preprint arXiv:2505.24025},
-        year={2025}
-      }
+  title={DINO-R1: Incentivizing Reasoning Capability in Vision Foundation Models},
+  author={Pan, Chenbin and He, Wenbin and Tu, Zhengzhong and Ren, Liu},
+  journal={arXiv preprint arXiv:2505.24025},
+  year={2025}
+}
